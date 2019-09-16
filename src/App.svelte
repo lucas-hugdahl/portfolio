@@ -9,10 +9,17 @@
 	import AOS from 'aos';
 	import { onMount } from 'svelte';
 
+	let scrollPos = 0;
+
 	onMount(async () => {
-		// var parallaxInstance = new Parallax(document.getElementById('scene'));
 		AOS.init();
-  });
+		handleScrollListener();
+	});
+	
+	function handleScrollListener() {
+		scrollPos = window.pageYOffset;
+		window.requestAnimationFrame(handleScrollListener);
+	}
 </script>
 
 <style type="text/scss">
@@ -23,17 +30,26 @@
 		box-sizing: border-box;
 		
 		&__bg {
-			background-image: url('/images/bg.jpg');
-			background-size: cover;
-			background-position: top;
-			filter: blur(8px);
-			-webkit-filter: blur(8px);
-			height: 200vh;
-			width: 100%;
+		
+	
+			min-height: 500vh;
+			min-width: 100vw;
 			position: fixed;
 			z-index: -1;
 			top: 0;
-			transform: scale(1.1);
+
+			&__image {
+				position: absolute;
+				top: 0;
+				left: 0;
+					background-image: url('/images/bg.jpg');
+					background-size: cover;
+					background-position: top;
+					filter: blur(8px);
+					-webkit-filter: blur(4px);
+					transition: transform .1s ease-out;
+			}
+		
 		}	
 
 		&__content {
@@ -48,7 +64,9 @@
 	}
 </style>
 <main class="main-wrapper vw-100" id="scene">
-	<div class="main-wrapper__bg"></div>
+	<div class="main-wrapper__bg">
+		<div class="w-100 h-100 main-wrapper__bg__image" style="transform: scale(1.2) translateY({scrollPos * -.3}px)"></div>
+	</div>
 	<div class="main-wrapper__content container-main bg-white">
 		<Header/>
 		<About/>

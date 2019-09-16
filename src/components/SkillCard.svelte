@@ -41,9 +41,10 @@ export let fadeDelay;
 
     @include break-up('lg') {
       min-width: 33.33%;
+
       &__image {
-        height: 80px;
-        width: px;
+        height: 120px;
+        width: 120px;
         object-fit: contain;
         object-position: center;
       }
@@ -52,6 +53,6 @@ export let fadeDelay;
 </style>
 
 <a class="skill-card d-flex align-items-center" href="{url}" data-aos="fade-up" data-aos-delay="{fadeDelay}" data-depth="0.4">
-  <img class="skill-card__image" src="{image}">
+  <img class="skill-card__image" alt={name} src="{image}">
   <p class="skill-card__label">{name}</p>
 </a>

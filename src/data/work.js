@@ -1,43 +1,43 @@
 import skill from "./skills";
 export default [
   {
-    image: "images/recent-work/all-up.png",
+    image: "images/recent-work/all-up.jpg",
     brand: "images/logos/microsoft.png",
     url: "https://discover.microsoft.com/8-real-world-digital-transformation-lessons/",
     skills: [skill.vue, skill.sass, skill.bootstrap, skill.babylon, skill.webpack]
   },
   {
-    image: "images/recent-work/alpha-universe.png",
+    image: "images/recent-work/alpha-universe.jpg",
     brand: "images/logos/sony.png",
     url: "https://alphauniverse.com/",
     skills: [skill.jquery, skill.sass, skill.bootstrap, skill.zesty, skill.gulp]
   },
   {
-    image: "images/recent-work/cine.png",
+    image: "images/recent-work/cine.jpg",
     brand: "images/logos/sony.png",
     url: "https://sonycine.com",
     skills: [skill.js, skill.sass, skill.bootstrap, skill.zesty, skill.node, ]
   },
   {
-    image: "images/recent-work/red-twig.png",
+    image: "images/recent-work/red-twig.jpg",
     brand: "Red Twig Cafe",
     url: "https://redtwig.com",
     skills: [skill.vue, skill.sass, skill.bootstrap, skill.webpack]
   },
   {
-    image: "images/recent-work/savannah.png",
+    image: "images/recent-work/savannah.jpg",
     brand: "Savannah Seattle",
     url: "https://www.savannahseattle.com/",
     skills: [skill.vue,  skill.sass, skill.bootstrap, skill.webpack]
   },
   {
-    image: "images/recent-work/segway.png",
+    image: "images/recent-work/segway.jpg",
     brand: "Edmonds Segway",
     url: "https://www.edmondssegwaytours.com/",
     skills: [skill.html, skill.css, skill.js]
   },
   {
-    image: "images/recent-work/this.png",
+    image: "images/recent-work/this.jpg",
     brand: "This Site",
     url: "/",
     skills: [skill.svelte, skill.sass, skill.rollup]

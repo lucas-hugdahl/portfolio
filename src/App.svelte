@@ -4,22 +4,13 @@
 	import Skills from "./components/Skills.svelte";
 	import Work from "./components/Work.svelte";
 	import Contact from "./components/Contact.svelte";
-
-	import Parallax from "parallax-js";
 	import AOS from 'aos';
 	import { onMount } from 'svelte';
 
-	let scrollPos = 0;
 
 	onMount(async () => {
 		AOS.init();
-		handleScrollListener();
 	});
-	
-	function handleScrollListener() {
-		scrollPos = window.pageYOffset;
-		window.requestAnimationFrame(handleScrollListener);
-	}
 </script>
 
 <style type="text/scss">
@@ -65,7 +56,7 @@
 </style>
 <main class="main-wrapper vw-100" id="scene">
 	<div class="main-wrapper__bg">
-		<div class="w-100 h-100 main-wrapper__bg__image" style="transform: scale(1.2) translateY({scrollPos * -.3}px)"></div>
+		<div class="w-100 h-100 main-wrapper__bg__image"></div>
 	</div>
 	<div class="main-wrapper__content container-main bg-white">
 		<Header/>

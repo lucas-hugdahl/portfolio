@@ -7,7 +7,6 @@
 	import AOS from 'aos';
 	import { onMount } from 'svelte';
 
-
 	onMount(async () => {
 		AOS.init();
 	});
@@ -21,8 +20,6 @@
 		box-sizing: border-box;
 		
 		&__bg {
-		
-	
 			min-height: 500vh;
 			min-width: 100vw;
 			position: fixed;

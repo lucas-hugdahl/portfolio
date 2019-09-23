@@ -5,6 +5,7 @@
 	import Work from "./components/Work.svelte";
 	import Contact from "./components/Contact.svelte";
 	import AOS from 'aos';
+	
 	import { onMount } from 'svelte';
 
 	onMount(async () => {

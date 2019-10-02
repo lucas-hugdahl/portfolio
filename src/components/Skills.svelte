@@ -1,12 +1,7 @@
 <script>
   import SkillCard from "./SkillCard.svelte";
   import skill from "../data/skills";
-	//import AOS from 'aos';
-	// import { onMount } from 'svelte';
 
-	// onMount(async () => {
-	// 		AOS.init();
-  // });
 
   let skillRows = [
     [
@@ -35,6 +30,11 @@
       skill.three,
     ],
     [
+       skill.git, 
+      skill.wordpress,
+      skill.twig
+    ],
+    [
       skill.jquery,
       skill.npm,
       skill.aws    
@@ -45,12 +45,9 @@
       skill.js    
     ],
     [
-       skill.git, 
-      skill.photoshop,
+      skill.figma,
+       skill.photoshop,
       skill.illustrator
-    ],
-    [
-      skill.figma
     ]
      
   ]

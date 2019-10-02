@@ -60,6 +60,7 @@
   }
 </style>
 
+<!-- {{image}} -->
 <a class="work-card mb-6" target="_blank" href={url} data-aos="fade-up" data-aos-anchor-placement="top-center">
   <div class="work-card__image" style="{`background-image: url('${image}')`}">
   </div>

@@ -1,5 +1,15 @@
 //skills dictionary
 export default {
+  wordpress: {
+    image: "images/icons/wordpress.png",
+    name: "Wordpress",
+    url: "https://wordpress.com"
+  },
+  twig: {
+    image: "images/icons/twig.png",
+    name: "Twig",
+    url: "https://twig.symfony.com/"
+  },
   js: {
     image: "images/icons/js.png",
     name: "JavaScript",

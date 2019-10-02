@@ -1,6 +1,12 @@
 import skill from "./skills";
 export default [
   {
+    image: "images/recent-work/wpa.jpg",
+    brand: "images/logos/microsoft.png",
+    url: "https://insights.office.com/",
+    skills: [skill.js, skill.sass, skill.wordpress, skill.twig, skill.gulp]
+  },
+  {
     image: "images/recent-work/all-up.jpg",
     brand: "images/logos/microsoft.png",
     url: "https://discover.microsoft.com/8-real-world-digital-transformation-lessons/",

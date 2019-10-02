@@ -21,6 +21,7 @@
 		box-sizing: border-box;
 		
 		&__bg {
+			transform: scale(1.1);
 			min-height: 500vh;
 			min-width: 100vw;
 			position: fixed;

@@ -8,6 +8,9 @@ $map-flex: (
       center: (
         justify-content: center,
       ),
+      between: (
+        justify-content: space-between,
+      ),
       end: (
         justify-content: flex-end,
       )

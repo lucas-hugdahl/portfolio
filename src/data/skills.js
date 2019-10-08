@@ -5,6 +5,11 @@ export default {
     name: "Wordpress",
     url: "https://wordpress.com"
   },
+  react: {
+    image: "images/icons/react.png",
+    name: "React",
+    url: "https://reactjs.org/"
+  },
   twig: {
     image: "images/icons/twig.png",
     name: "Twig",

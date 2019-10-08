@@ -6,8 +6,8 @@
   let skillRows = [
     [
       skill.vue,
-      skill.svelte,
-      skill.angular
+      skill.react,
+      skill.svelte
     ],
     [
       skill.sass,
@@ -25,7 +25,7 @@
       skill.mongo
     ],
     [
-       skill.zesty, 
+      skill.zesty, 
       skill.babylon,
       skill.three,
     ],

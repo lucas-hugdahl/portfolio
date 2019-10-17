@@ -25,6 +25,12 @@ export default [
     skills: [skill.js, skill.sass, skill.bootstrap, skill.zesty, skill.node, ]
   },
   {
+    image: "images/recent-work/fakestagram.jpg",
+    brand: "Fakestagram",
+    url: "https://fakestagram.netlify.com",
+    skills: [skill.react, skill.sass, skill.bootstrap, skill.node, skill.webpack]
+  },
+  {
     image: "images/recent-work/red-twig.jpg",
     brand: "Red Twig Cafe",
     url: "https://redtwig.com",

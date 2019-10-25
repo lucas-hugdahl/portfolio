@@ -21,23 +21,26 @@
 		box-sizing: border-box;
 		
 		&__bg {
-			transform: scale(1.1);
+			transform: scale(1.2);
 			min-height: 500vh;
 			min-width: 100vw;
 			position: fixed;
 			z-index: -1;
 			top: 0;
+			filter: blur(8px);
+			-webkit-filter: blur(8px);
 
 			&__image {
+				content: "";
 				position: absolute;
 				top: 0;
 				left: 0;
-					background-image: url('/images/bg.jpg');
-					background-size: cover;
-					background-position: top;
-					filter: blur(8px);
-					-webkit-filter: blur(4px);
-					transition: transform .1s ease-out;
+				width: 100%;
+				height: 100%;
+				background-image: url('/images/bg.jpg');
+				background-size: cover;
+				background-position: top;
+				transition: transform .1s ease-out;
 			}
 		
 		}	
@@ -55,7 +58,7 @@
 </style>
 <main class="main-wrapper vw-100" id="scene">
 	<div class="main-wrapper__bg">
-		<div class="w-100 h-100 main-wrapper__bg__image"></div>
+		<div class="main-wrapper__bg__image"></div>
 	</div>
 	<div class="main-wrapper__content container-main bg-white">
 		<Header/>

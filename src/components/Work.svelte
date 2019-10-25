@@ -1,7 +1,6 @@
 <script>
   import WorkCard from "./WorkCard.svelte";
   import recentProjects from "../data/work";
-  console.log(recentProjects);
 </script>
 <style type="text/scss">
   .work {

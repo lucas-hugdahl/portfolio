@@ -25,6 +25,12 @@ export default [
     skills: [skill.js, skill.sass, skill.bootstrap, skill.zesty, skill.node, ]
   },
   {
+    image: "images/recent-work/mbmd.jpg",
+    brand: "M2 Information Systems",
+    url: "https://m2is.com",
+    skills: [skill.html, skill.sass, skill.bootstrap, skill.js]
+  },
+  {
     image: "images/recent-work/fakestagram.jpg",
     brand: "Fakestagram",
     url: "https://fakestagram.netlify.com",

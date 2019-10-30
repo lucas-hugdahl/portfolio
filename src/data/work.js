@@ -4,7 +4,7 @@ export default [
     image: "images/recent-work/wpa.jpg",
     brand: "images/logos/microsoft.png",
     url: "https://insights.office.com/",
-    skills: [skill.js, skill.sass, skill.wordpress, skill.twig, skill.gulp]
+    skills: [skill.html, skill.sass, skill.js,  skill.wordpress, skill.twig, skill.gulp]
   },
   {
     image: "images/recent-work/all-up.jpg",
@@ -16,13 +16,13 @@ export default [
     image: "images/recent-work/alpha-universe.jpg",
     brand: "images/logos/sony.png",
     url: "https://alphauniverse.com/",
-    skills: [skill.jquery, skill.sass, skill.bootstrap, skill.zesty, skill.gulp]
+    skills: [skill.html, skill.sass, skill.bootstrap, skill.jquery, skill.zesty, skill.gulp]
   },
   {
     image: "images/recent-work/cine.jpg",
     brand: "images/logos/sony.png",
     url: "https://sonycine.com",
-    skills: [skill.js, skill.sass, skill.bootstrap, skill.zesty, skill.node, ]
+    skills: [skill.html, skill.sass, skill.bootstrap, skill.js, skill.zesty, skill.node, ]
   },
   {
     image: "images/recent-work/mbmd.jpg",
@@ -52,7 +52,7 @@ export default [
     image: "images/recent-work/segway.jpg",
     brand: "Edmonds Segway",
     url: "https://www.edmondssegwaytours.com/",
-    skills: [skill.html, skill.css, skill.js]
+    skills: [skill.three, skill.vue, skill.sass, skill.bootstrap, skill.webpack]
   },
   {
     image: "images/recent-work/this.jpg",

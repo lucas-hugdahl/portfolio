@@ -17,7 +17,7 @@
 		}
 	});
 
-	function handlerBackNavigation(event){
+	function handlerBackNavigation(event) {
 		curRoute.set(event.state.path)
 	}
 </script>
@@ -67,8 +67,8 @@
 		<div class="main-wrapper__bg__image"></div>
 	</div>
 
-	<RouterLink page={{path: '/home', name: 'Home'}} />
-	<RouterLink page={{path: '/blog', name: 'Blog'}} />
+	<!-- <RouterLink page={{path: '/home', name: 'Home'}} />
+	<RouterLink page={{path: '/blog', name: 'Blog'}} /> -->
 
 	<div class="container-main">
 		<!-- ROUTER -->

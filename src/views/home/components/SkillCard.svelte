@@ -6,7 +6,7 @@ export let fadeDelay;
 </script>
 
 <style type="text/scss">
-  @import "../assets/scss/mixins";
+  @import "../../../assets/scss/mixins";
 
   .skill-card {
     margin-bottom: 1.5rem;

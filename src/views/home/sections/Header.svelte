@@ -1,5 +1,5 @@
 <style type="text/scss">
-  @import "../assets/scss/mixins";
+  @import "../../../assets/scss/mixins";
 
   .header {
     position: relative;

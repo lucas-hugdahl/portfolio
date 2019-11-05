@@ -1,5 +1,5 @@
 <script>
-  import SkillCard from "./SkillCard.svelte";
+  import SkillCard from "../components/SkillCard.svelte";
   import skill from "../data/skills";
 
 

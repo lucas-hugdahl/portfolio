@@ -5,7 +5,7 @@
   export let skills;
 </script>
 <style type="text/scss">
-  @import "../assets/scss/mixins";
+  @import "../../../assets/scss/mixins";
 
   .work-card {
     text-decoration: none;

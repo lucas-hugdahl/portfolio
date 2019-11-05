@@ -1,16 +1,25 @@
 <script>
-	import Header from "./components/Header.svelte";
-	import About from "./components/About.svelte";
-	import Skills from "./components/Skills.svelte";
-	import Work from "./components/Work.svelte";
 	import Contact from "./components/Contact.svelte";
+	import Home from "./views/home/Home.svelte";
+	import NotFound from "./views/404.svelte";
 	import AOS from 'aos';
+	import router, { curRoute } from './router.js';
+	import RouterLink from './components/RouterLink.svelte';
+
 	
 	import { onMount } from 'svelte';
 
 	onMount(async () => {
 		AOS.init();
+		curRoute.set(window.location.pathname);
+		if (!history.state) {
+			window.history.replaceState({path: window.location.pathname}, '',   window.location.href)
+		}
 	});
+
+	function handlerBackNavigation(event){
+		curRoute.set(event.state.path)
+	}
 </script>
 
 <style type="text/scss">
@@ -42,13 +51,7 @@
 				background-position: top;
 				transition: transform .1s ease-out;
 			}
-		
 		}	
-
-		&__content {
-			background: white;
-			box-shadow: 0 6.4px 14.4px 0 rgba(0,0,0,.132), 0 1.2px 3.6px 0 rgba(0,0,0,.108);
-		}
 
 		@include break-up('lg') {
 			padding-top: 15%;
@@ -56,15 +59,21 @@
 		}
 	}
 </style>
+
+<svelte:window on:popstate={handlerBackNavigation} />
+
 <main class="main-wrapper vw-100" id="scene">
 	<div class="main-wrapper__bg">
 		<div class="main-wrapper__bg__image"></div>
 	</div>
-	<div class="main-wrapper__content container-main bg-white">
-		<Header/>
-		<About/>
-		<Skills/>
-		<Work/>
+
+	<RouterLink page={{path: '/home', name: 'Home'}} />
+	<RouterLink page={{path: '/blog', name: 'Blog'}} />
+
+	<div class="container-main">
+		<!-- ROUTER -->
+		<svelte:component this={router[$curRoute] ? router[$curRoute] : NotFound} />
+		<!-- ROUTER -->
 		<Contact/>
 	</div>
 </main>

@@ -1,5 +1,5 @@
 <script>
-  import WorkCard from "./WorkCard.svelte";
+  import WorkCard from "../components/WorkCard.svelte";
   import recentProjects from "../data/work";
 </script>
 <style type="text/scss">

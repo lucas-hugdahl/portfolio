@@ -5,6 +5,26 @@ export default {
     name: "Wordpress",
     url: "https://wordpress.com"
   },
+  eslint: {
+    image: "images/icons/eslint.png",
+    name: "ESlint",
+    url: "https://eslint.org/"
+  },
+  postcss: {
+    image: "images/icons/postcss.png",
+    name: "PostCSS",
+    url: "https://postcss.org/"
+  },
+  xstate: {
+    image: "images/icons/xstate.png",
+    name: "XState",
+    url: "https://xstate.js.org/"
+  },
+  postcss: {
+    image: "images/icons/postcss.png",
+    name: "PostCSS",
+    url: "https://postcss.org/"
+  },
   react: {
     image: "images/icons/react.png",
     name: "React",

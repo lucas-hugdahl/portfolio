@@ -1,10 +1,9 @@
 <script>
 	import Contact from "./components/Contact.svelte";
-	import Home from "./views/home/Home.svelte";
+	import Nav from "./components/Nav.svelte";
 	import NotFound from "./views/404.svelte";
 	import AOS from 'aos';
 	import router, { curRoute } from './router.js';
-	import RouterLink from './components/RouterLink.svelte';
 
 	
 	import { onMount } from 'svelte';
@@ -67,10 +66,9 @@
 		<div class="main-wrapper__bg__image"></div>
 	</div>
 
-	<!-- <RouterLink page={{path: '/home', name: 'Home'}} />
-	<RouterLink page={{path: '/blog', name: 'Blog'}} /> -->
 
 	<div class="container-main">
+		<!-- <Nav curRoute={$curRoute}/> -->
 		<!-- ROUTER -->
 		<svelte:component this={router[$curRoute] ? router[$curRoute] : NotFound} />
 		<!-- ROUTER -->

@@ -4,6 +4,8 @@ export let page = {
   path: '/home',
   name: 'Home'
 }
+
+$: route = curRoute
 function redirectTo(event){
   // change current router path
   curRoute.set(event.target.pathname);
@@ -11,11 +13,12 @@ function redirectTo(event){
   window.history.pushState({path: page.path}, '', window.location.origin + page.path);
 }
 </script>
-<style>
+<style type="text/scss">
 a {
-text-transform: uppercase;
-text-decoration: underline;
-padding: 1rem;
+  &.active {
+    background: black;
+    color: white;
+  }
 }
 </style>
-<a href={page.path} on:click|preventDefault={redirectTo}>{page.name}</a>
+<a href={page.path} class={`${page.path == route}` ? 'active' : 'not'} on:click|preventDefault={redirectTo}>{page.name}</a>

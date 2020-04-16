@@ -1,6 +1,12 @@
 import skill from "./skills";
 export default [
   {
+    image: "images/recent-work/crucible.jpg",
+    brand: "images/logos/amazon.jpg",
+    url: "https://www.amazongames.com/games/index.html",
+    skills: [skill.svelte, skill.xstate, skill.postcss, skill.rollup]
+  },
+  {
     image: "images/recent-work/wpa.jpg",
     brand: "images/logos/microsoft.png",
     url: "https://insights.office.com/",

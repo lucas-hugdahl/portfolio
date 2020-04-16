@@ -1,3 +1,14 @@
+<script>
+  import { onMount } from "svelte";
+  import "splitting/dist/splitting.css";
+  import "splitting/dist/splitting-cells.css";
+  import Splitting from "splitting";
+  onMount(async () => {
+  // something soon
+  // Splitting();
+  });
+</script>
+
 <style type="text/scss">
   @import "../../../assets/scss/mixins";
 
@@ -56,8 +67,8 @@
 
 <section class="header">
   <div class="header__text" data-depth="0.6">
-    <h1 class="header__text__name mt-0 mb-1 ">Lucas Hugdahl</h1>
-    <p class="header__text__title my-0">Full Stack JavaScript Developer</p>
+    <h1 class="header__text__name mt-0 mb-1" data-splitting>Lucas Hugdahl</h1>
+    <p class="header__text__title my-0">Front End Developer</p>
   </div>
   <img class="header__image" src="images/avatar.png" alt="Headshot photograph of Lucas Hugdahl in a Hawaiin shirt"/>
 </section>

@@ -10,6 +10,11 @@
       skill.svelte
     ],
     [
+      skill.xstate,
+      skill.eslint,
+      skill.postcss
+    ],
+    [
       skill.sass,
       skill.bash,
       skill.bootstrap

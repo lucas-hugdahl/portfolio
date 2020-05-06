@@ -5,19 +5,9 @@
 
   let skillRows = [
     [
+      skill.svelte,
       skill.vue,
-      skill.react,
-      skill.svelte
-    ],
-    [
-      skill.xstate,
-      skill.eslint,
-      skill.postcss
-    ],
-    [
-      skill.sass,
-      skill.bash,
-      skill.bootstrap
+      skill.react
     ],
     [
       skill.gulp,
@@ -30,12 +20,22 @@
       skill.mongo
     ],
     [
+      skill.xstate,
+      skill.eslint,
+      skill.postcss
+    ],
+    [
+      skill.sass,
+      skill.bash,
+      skill.bootstrap
+    ],
+    [
       skill.zesty, 
       skill.babylon,
       skill.three,
     ],
     [
-       skill.git, 
+      skill.git, 
       skill.wordpress,
       skill.twig
     ],
@@ -51,7 +51,7 @@
     ],
     [
       skill.figma,
-       skill.photoshop,
+      skill.photoshop,
       skill.illustrator
     ]
      

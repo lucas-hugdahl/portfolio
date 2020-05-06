@@ -27,14 +27,14 @@ export let fadeDelay;
       text-align: center;
       color: black;
       margin-top: 1rem;
-      opacity: 0;
+      // opacity: 0;
       transition: opacity .3s ease-in-out;
     }
 
     &:hover {
-      .skill-card__label {
-        opacity: 1;
-      }
+      // .skill-card__label {
+      //   opacity: 1;
+      // }
 
       transform: translateY(-10px)
     }

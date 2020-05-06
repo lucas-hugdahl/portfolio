@@ -35,6 +35,11 @@ export default {
     name: "Twig",
     url: "https://twig.symfony.com/"
   },
+  lambda: {
+    image: "images/icons/lambda.png",
+    name: "Lambda",
+    url: "https://aws.amazon.com/"
+  },
   js: {
     image: "images/icons/js.png",
     name: "JavaScript",

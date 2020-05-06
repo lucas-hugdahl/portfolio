@@ -8,13 +8,13 @@
 	
 	import { onMount } from 'svelte';
 
-	onMount(async () => {
-		AOS.init();
-		curRoute.set(window.location.pathname);
-		if (!history.state) {
-			window.history.replaceState({path: window.location.pathname}, '',   window.location.href)
-		}
-	});
+	// onMount(async () => {
+	// 	AOS.init();
+	// 	curRoute.set(window.location.pathname);
+	// 	if (!history.state) {
+	// 		window.history.replaceState({path: window.location.pathname}, '',   window.location.href)
+	// 	}
+	// });
 
 	function handlerBackNavigation(event) {
 		curRoute.set(event.state.path)
@@ -29,8 +29,7 @@
 		box-sizing: border-box;
 		
 		&__bg {
-			transform: scale(1.2);
-			min-height: 500vh;
+			min-height: 100vh;
 			min-width: 100vw;
 			position: fixed;
 			z-index: -1;
